@@ -7,8 +7,7 @@
 
 Rails.application.config.middleware.insert_before 0, Rack::Cors do
   allow do
-    origins 'https://minasenanami.github.io'
-
+    origins 'https://minasenanami.github.io/front_api/'
     resource '*',
       headers: :any,
       methods: [:get, :post, :put, :patch]
